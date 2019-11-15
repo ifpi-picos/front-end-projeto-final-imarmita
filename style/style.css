@@ -1,0 +1,74 @@
+@font-face{
+    font-family: "Nexa Bold", sans-serif;
+    src: url("font/OnlineWebFonts_COM_204e7bdcf56e41998f19249085df2cfb/NexaBold/NexaBold.ttf");
+ }
+
+body{
+    padding: 10px 25px 10px 25px;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'NexaBold', sans-serif;  
+}
+
+.logo{
+    display: flex;
+    
+}
+.logo img{
+    height: 50px;
+    width: 65px;
+    margin-left: 25px; 
+}
+.logo .title{
+    color: #F44336;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+nav ul{
+    height: 40px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-self: flex-end;
+    margin-right: 35px;
+
+}
+
+nav ul li button{
+    background: #F44336;
+    color: white;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+}
+
+main{
+    width: 100%;
+    height: 353px;
+    border: solid 1px black;
+    margin: 30px 0 30px 0;
+}
+
+.footer_title{
+    width: 100%;
+    font-family: "Roboto",sans-serif; 
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text_footer{
+    font-family: "Roboto",sans-serif;
+    color: Black;
+}
