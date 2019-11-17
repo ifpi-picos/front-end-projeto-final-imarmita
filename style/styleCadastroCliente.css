@@ -1,0 +1,63 @@
+@font-face {
+    font-family: nexaBold;
+    src: url(./font/OnlineWebFonts_COM_204e7bdcf56e41998f19249085df2cfb/NexaBold/NexaBold.ttf);
+    }
+@font-face {
+    font-family: nexaLight;
+    src: url(./font/nexa-light-maisfontes/nexa-light.otf);
+    }
+
+body{
+    margin-top: 100px;
+
+}
+
+h1{
+    text-align: center;
+    color: #F44336;
+    font-weight: bold;
+    font-family: nexaBold;
+
+}
+
+input {
+	display: block;
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    border:solid 1px #eeeeee;
+    font-family: nexaLight;
+ 
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-footer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-footer button{
+    width: 299px;
+    padding: 9px 0;
+    margin-top: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #F44336;
+    border: none;
+    border-radius: 10px;
+    font-family: nexaBold;
+
+}
+
+.form-footer button:hover{
+    color: #F44336;
+    background: #ffffff;
+    border:solid 1px #F44336;
+}
