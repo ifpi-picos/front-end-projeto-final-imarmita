@@ -35,7 +35,7 @@ nav {
 
 nav ul {
   height: 40px;
-  width: 320px;
+  width: 450px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -78,6 +78,7 @@ nav ul {
     border: none;
     border-radius: 5px;
     font-family: nexaBold;
+    margin-right: 10px;
 }
 
 main {
@@ -111,21 +112,32 @@ main h4{
 
 .titulos{
     display:flex;
-    font-size: 25px;
+    font-size: 20px;
     font-family: nexaLight;
     color:#ffffff;
     justify-content: space-around;
+    padding-top: 20px;
 
 }
 
-.icones{
+.img-icon{
     display:flex;
     justify-content: space-evenly;
-    
 }
 
-i{
-    color:#ffffff;
+.tam-img{
+    height: 85px;
+    width: 80px;
+}
+
+.arrow{
+    height: 20px;
+    width: 20px;
+}
+
+.card{
+    height: 70px;
+    width: 80px;
 }
 
 footer{

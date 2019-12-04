@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/4674794c5f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4674794c5f.js" crossorigin="anonymous"></script>
+    <title>Home</title>
 </head>
 
 <body>
     <nav class="color_primary">
         <div class="logo">
-            <img src="assets/img/logo.png" alt="logo">
+            <img src="assets/icons/logo.png" alt="logo">
             <h1 class="title">iMarmita</h1>
         </div>
         <ul>
-            <li><button class="botao-secundario">Cadastre seu restaurante</button></li>
-            <li><button class="botao-primario">Entrar</button></li>
+            <li><button onclick="redirectCadastroFornecedor()" class="botao-secundario">Cadastre seu restaurante</button></li>
+            <li><button onclick="redirectLoginFornecedor()" class="botao-primario">Já é um Forncedor?</button></li>
+            <li><button onclick="redirectLogin()" class="botao-primario">Entrar</button></li>
         </ul>
     </nav>
 
@@ -36,19 +38,30 @@
 
     <footer>
         <div class="titulos">
-            
             <h4>Pediu</h4>
-            <h4>Confirmou</h4>
+            <h4>Pagou</h4>
             <h4>Chegou </h4>
         </div>
-        <div class="icones">
-            <i class="fas fa-5x fa-utensils"></i>
-            <i class="fas fa-5x fa-long-arrow-alt-right"></i>
-            <i class="fas fa-5x fa-credit-card"></i>
-            <i class="fas fa-5x fa-long-arrow-alt-right"></i>
-            <i class="icon1 fas fa-5x fa-truck"></i>
+        <div class="img-icon">
+            <img class="tam-img" src="./assets/icons/food.png" alt="">
+            <img class="arrow" src="./assets/icons/arrow.png" alt="">
+            <img class="card" src="./assets/icons/card.png" alt="">
+            <img class="arrow" src="./assets/icons/arrow.png" alt="">
+            <img class="tam-img" src="./assets/icons/carro.png" alt="">
+
         </div>
     </footer>
-   
+    <script>
+        function redirectCadastroFornecedor() {
+            window.location.assign('./pages/cadastroFornecedor.html');
+        }
+        function redirectLoginFornecedor(){
+            window.location.assign('./pages/loginFornecedor.html');
+        }
+        function redirectLogin() {
+            window.location.assign('./pages/login.html');
+        }
+    </script>
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 const myInputs = Array.from(document.getElementsByTagName("input"));
 
 function pegarCamposFornecedor(){
@@ -12,28 +11,36 @@ function pegarCamposFornecedor(){
     cidade: myInputs[6].value,
     cep: myInputs[7].value
   }
+
   enviarFornecedor(fornecedor);
 }
 
 function enviarFornecedor(fornecedor) {
-  fetch("http://localhost:3000/fornecedores/cadastrar", {
-    method: "POST",
+  fetch('http://localhost:3000/fornecedores/cadastrar', {
+    method: 'POST',
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json"
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify(fornecedor)
+
   }).then(resposta =>
-    resposta.json().then(valor => {
+    resposta.json().then(valor =>{
       tratarResposta(valor, resposta.status);
-    })
-  );
+    }));
 }
 
 function tratarResposta(msg, status){
   if(status === 201){
-    alert(msg.msg)
-    window.location.assign("../pages/login.html")
+    alert(msg.msg);
+    window.location.assign('../pages/login.html');
   }
 
 }
+
+function tratarErro(){
+  myInputs.forEach(valor=>{
+    
+  })
+}
+

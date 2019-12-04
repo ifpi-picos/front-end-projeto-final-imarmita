@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style/styleCadastroCliente.css">
+    <link rel="stylesheet" href="../style/styleLogin.css">
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
-    <title>Cadastro de Cliente</title>
+    <title>Login</title>
 </head>
+
 <body>
+
     <h1 class="title">iMarmita</h1>
 
     <form class="formulario" action="">
         <div class="form-left">
-            <input type="text" placeholder="Nome">
             <input type="text" placeholder="Email">
             <input type="password" placeholder="Senha">
         </div>
     </form>
 
     <div class="form-footer">
-        <button onclick="pegarCamposCliente()">Cadastrar</button>
+        <button onclick="redirectCadastroFornecedor()" class="botao-secundario">Cadastre seu restaurante</button>
+        <button onclick="" class="botao-primario">Entrar</button>
     </div>
-    <script src="../js/cadastrarCliente.js"></script>
+    <script>
+        function redirectCadastroFornecedor() {
+            window.location.assign('./cadastroFornecedor.html');
+        }
+    </script>
 </body>
+
 </html>
