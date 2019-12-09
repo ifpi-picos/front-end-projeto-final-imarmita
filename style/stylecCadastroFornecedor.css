@@ -27,7 +27,8 @@ input {
     margin-top: 10px;
     border:solid 1px #eeeeee;
     font-family: nexaLight;
- 
+    padding: 8px;
+    border-radius: 6px;
 }
 
 form{

@@ -11,24 +11,23 @@
 </head>
 
 <body>
-
     <h1 class="title">iMarmita</h1>
-
     <form class="formulario" action="">
         <div class="form-left">
             <input type="text" placeholder="Email">
             <input type="password" placeholder="Senha">
         </div>
     </form>
-
     <div class="form-footer">
         <button onclick="redirectCadastroCliente()" class="botao-secundario">Cadastre-se</button>
-        <button class="botao-primario">Entrar</button>
+        <button onclick="redirectNavCliente()" class="botao-primario">Entrar</button>
     </div>
-
     <script>
         function redirectCadastroCliente() {
-            window.location.assign('./cadastroCliente.html');
+            window.location.assign("./cadastroCliente.html");
+        }
+        function redirectNavCliente(){
+            window.location.assign("./navegacaoCliente.html");
         }
     </script>
 </body>

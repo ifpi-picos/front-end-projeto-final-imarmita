@@ -41,7 +41,7 @@ nav {
 
 nav ul {
   height: 40px;
-  width: 300px;
+  width: 195px;
   display: flex;
   list-style-type: none;
   margin-right: 35px;
@@ -74,18 +74,18 @@ hr {
   border: solid 0.5px #ebebeb;
 }
 
-main {
-  margin-top: 5px;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
 h4 {
   font-family: nexaLight;
   color: #808080;
   font-size: 25px;
   margin-bottom: 0px;
   padding: 10px;
+}
+
+main {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 section {
@@ -98,7 +98,7 @@ section ul {
   padding: 0;
 }
 
-.section-item{
+.section-item {
   height: 200px;
   font-family: nexaBold;
   list-style-type: none;
@@ -108,7 +108,7 @@ section ul {
   box-shadow: 0px 0px 10px 0px #dbdbdb;
 }
 
-section ul li{
+section ul li {
   list-style-type: none;
   text-decoration-style: none;
 }
@@ -131,22 +131,4 @@ section ul li h6 {
   font-family: nexaLight;
   color: #a0a0a0;
   text-align: center;
-}
-
-main button{
-  width: 160px;
-  height: 50px;
-  background: #f44336;
-  color: white;
-  font-family: nexaBold;
-  border-radius: 10px;
-  margin-right: 50px;
-
-}
-
-.button{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin: 70px 0 10px 0;
 }

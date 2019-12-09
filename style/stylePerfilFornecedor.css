@@ -7,11 +7,6 @@
   src: url(./font/nexa-light-maisfontes/nexa-light.otf);
 }
 
-body{
-  height: 100%;
-  margin-bottom: 30px;
-}
-
 nav {
   width: 100%;
   height: 60px;
@@ -49,11 +44,6 @@ nav ul {
   margin-right: 35px;
 }
 
-.nav-button:hover {
-  color: #ffffff;
-  background: #f44336;
-}
-
 button {
   width: 100px;
   height: 50px;
@@ -71,7 +61,7 @@ button {
 
 .nav-button {
   padding: 3px 0;
-  color: #a0a0a0;
+  color: #f44336;
   background: #ffffff;
   border: none;
   border-radius: 5px;
@@ -81,101 +71,77 @@ hr {
   border: solid 0.5px #ebebeb;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.aling{
-  display: flex;
-}
-
-.aling h6{
-  font-family: nexaLight;
-  font-size: 15px;
-  margin: 40px 0px 0px 30px;
-}
-
-.aling input{
-  height: 30px;
-  width: 120px;
-  margin: 25px 0px 0px 20px;
-  font-family: nexaBold;
-}
-
-.aling button{
-  height: 38px;
-  width: 50px;
-  margin: 25px 0px 0px 20px; 
-  border: solid 1px #f44336;
-  border-radius: 50px;
-  font-family: nexaBold;
-  color: #f44336;
-
-}
-
-.flex-center{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-center i {
-  color: #f44336;
-  padding-left: 5px;
-}
-
-.flex-center h4 {
-  font-family: nexaLight;
-  color: #f44336;
-  font-size: 25px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-}
-
-.cesta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-cesta {
-  box-shadow: 1px 1px 10px 1px #ebebeb;
-  border: solid 1px #ebebeb;
-  border-radius: 10px;
-  height: 100%;
-  width: 450px;
-}
-
-.flex h6{
-  font-family: nexaLight;
-  font-size: 15px;
-}
-.flex img {
-  height: 60px;
-  width: 70px;
-}
-
-form button:hover{
-  background: #f44336;
-  color: white;
-  font-family: nexaBold;
-}
-
-.flex-end button{
+.form-info {
+  height: 150px;
   width: 100%;
-  flex: end;
-  font-family: nexaBold;
-  margin-top: 30px;
-  background: #f44336;
-  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
-.flex input{
+.form-info form {
+  height: 150px;
+}
+
+.form-info img {
+  height: 150px;
+  width: 210px;
+  box-shadow: 0px 0px 10px 0px #dbdbdb;
+}
+
+.form-info input {
+  display: block;
+  width: 250px;
   height: 25px;
-  width: 30px;
-  margin: 0px 0px 0px 0px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: solid 1px #eeeeee;
+  font-family: nexaLight;
+  margin-left: 40px;
+}
+
+.form-endereco{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-endereco form {
+  height: 250px;
+}
+
+.form-endereco input {
+  display: block;
+  width: 500px;
+  height: 25px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: solid 1px #eeeeee;
+  font-family: nexaLight;
+}
+
+.aling-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;;
+}
+
+.aling-button button{
+  height: 40px;
+  width: 270px;
+  padding: 9px 0;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  background: #f44336;
+  border: none;
+  border-radius: 10px;
   font-family: nexaBold;
 }

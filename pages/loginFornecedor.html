@@ -23,13 +23,15 @@
 
     <div class="form-footer">
         <button onclick="redirectCadastroFornecedor()" class="botao-secundario">Cadastre seu restaurante</button>
-        <button onclick="" class="botao-primario">Entrar</button>
+        <button onclick="redirectNavFornecedor()" class="botao-primario">Entrar</button>
     </div>
     <script>
         function redirectCadastroFornecedor() {
             window.location.assign('./cadastroFornecedor.html');
         }
+        function redirectNavFornecedor(){
+            window.location.assign("./navegacaoFornecedor.html");
+        }
     </script>
 </body>
-
 </html>

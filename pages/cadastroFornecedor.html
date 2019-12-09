@@ -29,13 +29,18 @@
             <input type="text" placeholder="Cidade">
             <input type="text" placeholder="CEP">
 
-        </div>        
+        </div>
     </form>
 
     <div class="form-footer">
-        <button onclick="pegarCamposFornecedor()">Cadastrar</button>
+        <button onclick="loginFornecedor()" onclick="pegarCamposFornecedor()">Cadastrar</button>
     </div>
     <script src="../js/cadastrarFornecedor.js"></script>
+    <script>
+        function loginFornecedor() {
+            window.location.assign("./loginFornecedor.html");
+        }
+    </script>
 </body>
 
 </html>

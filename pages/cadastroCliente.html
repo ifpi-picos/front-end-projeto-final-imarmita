@@ -20,8 +20,13 @@
     </form>
 
     <div class="form-footer">
-        <button onclick="pegarCamposCliente()">Cadastrar</button>
+        <button onclick="redirectLoginCliente()" onclick="pegarCamposCliente()">Cadastrar</button>
     </div>
     <script src="../js/cadastrarCliente.js"></script>
+    <script>
+            function redirectLoginCliente(){
+            window.location.assign("./login.html");
+        }
+    </script>
 </body>
 </html>

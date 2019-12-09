@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style/styleNavegacaoCliente.css">
-    <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
-    <title>Navegação Cliente</title>
+    <link rel="stylesheet" href="../style/stylePedidos.css">
+    <title>Pedidos</title>
 </head>
 
 <body>
@@ -18,15 +17,23 @@
         </div>
         <ul>
             <li>
-                <button>
+                <button onclick="redirectNavFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-border-all"></i>
-                        <h5>Restaurantes</h5>
+                        <h5>Cardápio</h5>
                     </div>
                 </button>
             </li>
             <li>
-                <button onclick="redirectPerfilCliente()">
+                <button>
+                    <div class="nav-button">
+                        <i class="fas fa-2x fa-mobile-alt"></i>
+                        <h5>Pedidos</h5>
+                    </div>
+                </button>
+            </li>
+            <li>
+                <button onclick="redirectPerfilFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-user-circle"></i>
                         <h5>Perfil</h5>
@@ -36,13 +43,20 @@
         </ul>
     </nav>
     <hr>
+
+
     <main>
-        <h4>Restaurantes</h4>
+
     </main>
+
+
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
     <script>
-        function redirectPerfilCliente() {
-            window.location.assign("./perfilCliente.html");
+        function redirectNavFornecedor() {
+            window.location.assign("./navegacaoFornecedor.html");
+        }
+        function redirectPerfilFornecedor() {
+            window.location.assign("./perfilFornecedor.html");
         }
     </script>
 </body>
