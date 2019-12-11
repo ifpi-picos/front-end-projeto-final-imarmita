@@ -95,26 +95,26 @@ main {
 .content-main img {
   height: 250px;
   width: 310px;
-  border: solid 1px #ebebeb;
+  padding: 20px;
 }
 
 .aling{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .aling input {
   display: block;
   width: 250px;
-  height: 30px;
-  margin-bottom: 10px;
+  height: 32px;
+  margin-top: 10px;
   padding: 8px;
   border-radius: 6px;
   border: solid 1px #eeeeee;
   font-family: nexaLight;
 }
 
-.content-main form button {
-  height: 40px;
+.botao-primario{
+  height: 45px;
   width: 270px;
   padding: 9px 0;
   margin-top: 15px;
@@ -122,6 +122,20 @@ main {
   font-weight: bold;
   background: #f44336;
   border: none;
+  border-radius: 10px;
+  font-family: nexaBold;
+}
+
+.botao-secundario{
+  height: 45px;
+  width: 50px;
+  padding: 9px 0;
+  margin-top: 15px;
+  color: #808080;
+  font-weight: bold;
+  background: #ffffff;
+  border: solid 1px #ebebeb;
+  font-size: 30px;
   border-radius: 10px;
   font-family: nexaBold;
 }

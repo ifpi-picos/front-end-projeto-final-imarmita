@@ -43,17 +43,61 @@
         </ul>
     </nav>
     <hr>
-
-
     <main>
-
+        <div>
+            <h1 class="titulo">Pedidos</h1>
+    
+            <div class="lista-de-pedidos">
+                <ul>
+                    <li class="flex">
+                        <img src="../assets/img/2.png" alt="img" class="img-lista">
+                        <div class="texto-lista">
+                            <h6>Karolaine Alencar</h6>
+                            <h6>Pedido: Descrição do Prato - Preço Tal</h6>
+                            <h6>Local de Entrega: Pantanal - Data 12/12/2019 - Hora 00:00</h6>
+                        </div>
+                        <div class="pedidos-aceitos">
+                            <span>Aceito</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="flex">
+                        <img src="../assets/img/4.png" alt="img" class="img-lista">
+                        <div class="texto-lista">
+                            <h6>Karolaine Alencar</h6>
+                            <h6>Pedido: Descrição do Prato - Preço Tal</h6>
+                            <h6>Local de Entrega: Pantanal - Data 12/12/2019 - Hora 00:00</h6>
+                        </div>
+                        <div class="pedidos-negados">
+                            <span>Negado</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="flex">
+                        <img src="../assets/img/5.png" alt="img" class="img-lista">
+                        <div class="texto-lista">
+                            <h6>Karolaine Alencar</h6>
+                            <h6>Pedido: Descrição do Prato - Preço Tal</h6>
+                            <h6>Local de Entrega: Pantanal - Data 12/12/2019 - Hora 00:00</h6>
+                        </div>
+                        <div class="flex">
+                            <button class="pedidos-pendentes">Aceitar Pedido</button>
+                            <button class="pedidos-pendentes">Negar Pedido</button>
+                        </div>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
     </main>
-
 
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
     <script>
         function redirectNavFornecedor() {
             window.location.assign("./navegacaoFornecedor.html");
+        }
+        function redirectPedidos() {
+
         }
         function redirectPerfilFornecedor() {
             window.location.assign("./perfilFornecedor.html");

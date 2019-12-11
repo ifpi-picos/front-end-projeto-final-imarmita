@@ -7,11 +7,6 @@
   src: url(./font/nexa-light-maisfontes/nexa-light.otf);
 }
 
-body {
-  height: 100%;
-  margin-bottom: 30px;
-}
-
 nav {
   width: 100%;
   height: 60px;
@@ -43,7 +38,9 @@ nav ul {
   height: 40px;
   width: 195px;
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  align-self: flex-end;
   margin-right: 35px;
 }
 
@@ -74,6 +71,43 @@ hr {
   border: solid 0.5px #ebebeb;
 }
 
+main {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+main h1 {
+  margin-top: 100px;
+  font-family: nexaLight;
+  color: #808080;
+  text-align: center;
+}
+
+.content-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-main form {
+  height: 250px;
+  width: 400px;
+  margin-left: 20px;
+}
+
+.content-main form p {
+  font-family: nexaLight;
+  color: #808080;
+  font-size: 20px;
+}
+
+.content-main img {
+  height: 250px;
+  width: 310px;
+  padding: 20px;
+}
+
 h4 {
   font-family: nexaLight;
   color: #808080;
@@ -82,15 +116,8 @@ h4 {
   padding: 10px;
 }
 
-main {
-  margin-top: 5px;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
 section {
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 section ul {
@@ -99,15 +126,34 @@ section ul {
   padding: 0;
 }
 
+.section-pratos-semana ul {
+  margin-bottom: 30px;
+}
+
 .section-item {
-  height: 300px;
+  height: 200px;
   font-family: nexaBold;
   list-style-type: none;
   border-radius: 10px;
   color: #808080;
   padding: 0 20px 0 20px;
-  border: solid 1px #e0e0e0;
+  border: solid 1px #e0e0e0d0;
+}
 
+.section-item-cardapio{
+  padding: 10px 40px 20px 40px;
+  border: solid 1px #e0e0e0d0;
+  border-radius: 10px;
+}
+
+.section-item-cardapio img {
+  margin-top: 40px;
+  height: 120px;
+  width: 150px;
+}
+
+.section-item-cardapio h6 {
+  font-size: 20px;
 }
 
 section ul li {
@@ -115,16 +161,52 @@ section ul li {
   text-decoration-style: none;
 }
 
-section ul li img {
+.section-item img {
   margin-top: 35px;
-  height: 200px;
-  width: 260px;
+  height: 80px;
+  width: 110px;
 }
 
 section ul li h5 {
-  font-size: 20px;
+  font-size: 17px;
   font-family: nexaLight;
-  color: #929292;
-  margin: 10px 5px 10px 5px;
+  color: #a0a0a0;
 }
 
+section ul li h6 {
+  font-size: 15px;
+  margin: 10px 5px 10px 5px;
+  font-family: nexaLight;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.restaurante {
+  height: 380px;
+  width: 100%;
+}
+
+.aling button{
+  height: 42px;
+  width: 193px;
+  padding: 9px 0;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  background: #f44336;
+  border: none;
+  border-radius: 8px;
+  font-family: nexaBold;
+}
+
+.aling input{
+  font-family: nexaLight;
+  color: #808080;
+  font-size: 20px;
+  height: 30px;
+  width: 180px;
+  border: solid 0.5 #ebebeb;
+  border-radius: 5px;
+  margin: 0 3px 5px 0;
+  padding: 5px;
+}
