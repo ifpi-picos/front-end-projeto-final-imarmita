@@ -95,7 +95,7 @@ main {
 .form-info img {
   height: 230px;
   width: 300px;
-  box-shadow: 0px 0px 10px 0px #dbdbdb;
+  border: solid 1px #ebebeb;
 }
 
 .aling {
