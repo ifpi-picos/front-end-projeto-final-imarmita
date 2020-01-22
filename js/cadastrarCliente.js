@@ -11,7 +11,7 @@ function pegarCamposCliente() {
 }
 
 function enviarCliente(cliente) {
-  fetch("http://localhost:3000/clientes/cadastrar", {
+  fetch("http://localhost:3000/api/clientes/", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -20,14 +20,32 @@ function enviarCliente(cliente) {
     body: JSON.stringify(cliente),
 
   }).then(resposta =>
-    resposta.json().then(valor =>{
-        tratarResposta(valor, resposta.status);
+    resposta.json().then(valor => {
+      tratarResposta(valor, resposta.status);
     }));
 }
 
-function tratarResposta(msg, status){
-    if(status === 201){
-        alert(msg.msg);
-        window.location.assign('../pages/login.html');
-    }
+function tratarResposta(msg, status) {
+
+
+  console.log(msg)
+  if (status === 201) {
+    const alert = document.getElementById("alert");
+
+    alert.setAttribute("class", "sucess alert")
+    const mensageText = document.createElement("p");
+    mensageText.innerHTML = msg.msg;
+    alert.appendChild(mensageText)
+    alert.style.display = "block";
+    alert(msg.msg);
+    window.location.assign('../pages/login.html');
+  } else {
+    const alert = document.getElementById("alert");
+
+    alert.setAttribute("class", "fail alert")
+    const mensageText = document.createElement("p");
+    mensageText.innerHTML = "Ocorreu um erro";
+    alert.appendChild(mensageText)
+    alert.style.display = "block";
+  }
 }

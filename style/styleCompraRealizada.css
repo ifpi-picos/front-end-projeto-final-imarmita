@@ -1,0 +1,89 @@
+@font-face {
+    font-family: nexaBold;
+    src: url(./font/OnlineWebFonts_COM_204e7bdcf56e41998f19249085df2cfb/NexaBold/NexaBold.ttf);
+    }
+@font-face {
+    font-family: nexaLight;
+    src: url(./font/nexa-light-maisfontes/nexa-light.otf);
+    }
+
+@keyframes move {
+    from {
+        left: 30%;
+    }
+    to {
+        left: 58%;
+    }
+}
+      
+.animacao_delivery img{
+    animation: 0.4s move;
+}
+
+.animacao_delivery img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 58%;
+}
+      
+@keyframes cor{
+    from {
+        color: #F44336;
+    }
+    to {
+        color: white;
+    }
+}
+
+.animacao_delivery h2{
+    animation: 1s cor;
+}
+
+body{
+    background-color: #F44336;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.content{
+    margin-top: 100px;
+    display: block;
+}
+
+.animacao_delivery{
+    display: flex;
+    justify-content: center;
+}
+
+h1,h2{
+    color: white;
+    font-family: nexaLight;
+    text-align: unset;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-right: 10px;
+}
+
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.logo h1{
+    text-align: center;
+    font-family: nexaBold;
+    font-size: 60px;
+}
+.logo img{
+    height: 100px;
+    width: 120px;
+    margin-right: 5px;
+}
