@@ -8,3 +8,6 @@ function inserirItem(){
     inputsPrato.appendChild(newInput);
 }
 
+function pegarCampos(){
+    
+}

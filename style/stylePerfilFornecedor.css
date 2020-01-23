@@ -70,6 +70,21 @@ button {
 hr {
   border: solid 0.5px #ebebeb;
 }
+.div-img{
+  height: 150px;
+  width: 200px;
+}
+
+.div-img img{
+  margin-bottom: 10px;
+}
+
+#imgFormInput{
+  width: 180px;
+  height: 15px;
+  margin-bottom: 0px;
+  margin: 0 0 0 0;
+}
 
 .form-info {
   height: 150px;
@@ -78,6 +93,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 
 .form-info form {

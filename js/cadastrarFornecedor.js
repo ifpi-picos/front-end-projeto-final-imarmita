@@ -1,3 +1,4 @@
+const BASE_URL = "http://localhost:3000/api/"
 const myInputs = Array.from(document.getElementsByTagName("input"));
 
 function pegarCamposFornecedor(){
@@ -16,7 +17,7 @@ function pegarCamposFornecedor(){
 }
 
 function enviarFornecedor(fornecedor) {
-  fetch('http://localhost:3000/fornecedores/cadastrar', {
+  fetch(BASE_URL + "fornecedores", {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -33,14 +34,9 @@ function enviarFornecedor(fornecedor) {
 function tratarResposta(msg, status){
   if(status === 201){
     alert(msg.msg);
-    window.location.assign('../pages/login.html');
+    window.location.assign('../pages/loginFornecedor.html');
   }
 
 }
 
-function tratarErro(){
-  myInputs.forEach(valor=>{
-    
-  })
-}
 

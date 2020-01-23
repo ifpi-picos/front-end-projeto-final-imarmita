@@ -18,7 +18,7 @@
         </div>
         <ul>
             <li>
-                <button>
+                <button onclick="redirectNavCliente()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-border-all"></i>
                         <h5>Restaurantes</h5>
@@ -26,7 +26,7 @@
                 </button>
             </li>
             <li>
-                <button>
+                <button onclick="redirectPerfilCliente()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-user-circle"></i>
                         <h5>Perfil</h5>
@@ -58,7 +58,7 @@
             <ul>
                 <li>
                     <h5>Domingo</h5>
-                    <div class="section-item">
+                    <div class="section-item" onclick="redirectPrato()">
                         <img src="../assets/img/4.png" alt="">
                         <hr>
                         <h6>Nome do Prato</h6>
@@ -126,7 +126,7 @@
         <section>
             <ul class="slider">
                 <li>
-                    <div class="section-item-cardapio">
+                    <div class="section-item-cardapio" onclick="redirectPrato()">
                         <img src="../assets/img/2.png" alt="">
                         <hr>
                         <h6>Nome do Prato</h6>
@@ -211,7 +211,17 @@
                 </li>
             </ul>
         </section>
-
+        <script>
+            function redirectPerfilCliente() {
+                window.location.assign("./perfilCliente.html");
+            }
+            function redirectNavCliente() {
+                window.location.assign("./navegacaoCliente.html");
+            }
+            function redirectPrato(){
+                window.location.assign("./itemPrato.html");
+            }
+        </script>
     </main>
 
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>

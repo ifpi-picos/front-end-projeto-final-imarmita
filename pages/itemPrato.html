@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styleItemRestaurante.css">
+    <link rel="stylesheet" href="../style/styleItemPrato.css">
     <title>Item Prato</title>
 </head>
 
@@ -41,14 +41,11 @@
             <h1>Restaurante O Galdencio</h1>
             <div class="content-main">
                 <img src="../assets/img/6.jpg" alt="imagem">
-                <form class="formulario" action="">
+                <form class="formulario" action="" style="display: flex;">
                     <div class="aling">
-                        <p>Nome do Prato</p>
-                        <p>Preço</p>
-                        <p>Descrição do Prato</p>
-                        <input type="date">
-                        <input type="time">
-                        <input type="text" placeholder="Local de Entrega">
+                        <div class="flex"> <p>Nome do Prato</p> <input type="date"></div>
+                        <div class="flex"> <p>Preço</p><input type="time"></div>
+                        <div class="flex"> <p>Descrição do Prato</p><input type="text" placeholder="Local de Entrega"></div>
                         <button>Comprar Prato</button>
                     </div>
                 </form>

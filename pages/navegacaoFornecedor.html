@@ -26,7 +26,7 @@
                 </button>
             </li>
             <li>
-                <button>
+                <button onclick="redirectPedidosFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-mobile-alt"></i>
                         <h5>Pedidos</h5>
@@ -237,6 +237,9 @@
     <script>
         function redirectNavFornecedor() {
             window.location.assign("./navegacaoFornecedor.html");
+        }
+        function redirectPedidosFornecedor() {
+            window.location.assign("./pedidos.html");
         }
         function redirectPerfilFornecedor() {
             window.location.assign("./perfilFornecedor.html");

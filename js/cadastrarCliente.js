@@ -1,4 +1,5 @@
 const myInputs = Array.from(document.getElementsByTagName("input"));
+const BASE_URL = "http://localhost:3000/api/"
 
 function pegarCamposCliente() {
   const cliente = {
@@ -11,7 +12,7 @@ function pegarCamposCliente() {
 }
 
 function enviarCliente(cliente) {
-  fetch("http://localhost:3000/api/clientes/", {
+  fetch(BASE_URL + "clientes", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -26,24 +27,8 @@ function enviarCliente(cliente) {
 }
 
 function tratarResposta(msg, status) {
-  console.log(msg)
-  if (status === 201) {
-    const alert = document.getElementById("alert");
-
-    alert.setAttribute("class", "sucess alert")
-    const mensageText = document.createElement("p");
-    mensageText.innerHTML = msg.msg;
-    alert.appendChild(mensageText)
-    alert.style.display = "block";
+  if(status === 201){
     alert(msg.msg);
-    window.location.assign('../pages/login.html');
-  } else {
-    const alert = document.getElementById("alert");
-
-    alert.setAttribute("class", "fail alert")
-    const mensageText = document.createElement("p");
-    mensageText.innerHTML = "Ocorreu um erro";
-    alert.appendChild(mensageText)
-    alert.style.display = "block";
+    window.location.assign('../pages/navegacaoCliente.html');
   }
 }

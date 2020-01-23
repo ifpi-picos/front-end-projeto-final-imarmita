@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/styleLogin.css">
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/global.css">
+
     <title>Login</title>
 </head>
 
@@ -19,15 +21,24 @@
 
     <form class="formulario" action="">
         <div class="form-left">
-            <input type="text" placeholder="Email">
-            <input type="password" placeholder="Senha">
+            <input type="text" placeholder="Email" id="email">
+            <input type="password" placeholder="Senha" id="senha">
         </div>
     </form>
+    <div class="alertContainer">
+        <div class="alert" id="alert">
+        
+        </div>
+    </div>
 
     <div class="form-footer">
         <button onclick="redirectCadastroFornecedor()" class="botao-secundario">Cadastre seu restaurante</button>
-        <button onclick="redirectNavFornecedor()" class="botao-primario">Entrar</button>
+        <button onclick="loginn('fornecedor')" class="botao-primario">Entrar</button>
     </div>
+
+    <script src="../js/login.js">
+        
+    </script>
     <script>
         function redirectCadastroFornecedor() {
             window.location.assign('./cadastroFornecedor.html');

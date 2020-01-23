@@ -18,7 +18,7 @@
         </div>
         <ul>
             <li>
-                <button>
+                <button onclick="redirectNavFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-border-all"></i>
                         <h5>Cardápio</h5>
@@ -26,7 +26,7 @@
                 </button>
             </li>
             <li>
-                <button>
+                <button onclick="redirectPedidosFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-mobile-alt"></i>
                         <h5>Pedidos</h5>
@@ -34,7 +34,7 @@
                 </button>
             </li>
             <li>
-                <button>
+                <button onclick="redirectPerfilFornecedor()">
                     <div class="nav-button">
                         <i class="fas fa-2x fa-user-circle"></i>
                         <h5>Perfil</h5>
@@ -63,6 +63,17 @@
 
     <script src="https://kit.fontawesome.com/4674794c5f.js" crossorigin="anonymous"></script>
     <script src="../js/inserirPrato.js"></script>
+    <script>
+        function redirectNavFornecedor() {
+            window.location.assign("./navegacaoFornecedor.html");
+        }
+        function redirectPedidosFornecedor() {
+            window.location.assign("./pedidos.html");
+        }
+        function redirectPerfilFornecedor() {
+            window.location.assign("./perfilFornecedor.html");
+        }
+    </script>
 </body>
 
 </html>
