@@ -98,9 +98,9 @@ h2{
 button{
     height: 20px;
     width: 150px;
-    border:solid 1px white;
+    border:solid 1px #F44336;
     background-color: #F44336;
-    color:white;
+    color:#F44336;
     margin-right: 10px;
     border-radius: 10px;
 }
