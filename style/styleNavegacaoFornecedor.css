@@ -127,7 +127,7 @@ section ul {
 }
 
 .section-item {
-  height: 200px;
+  height: 250px;
   font-family: nexaBold;
   list-style-type: none;
   border-radius: 10px;
@@ -193,4 +193,67 @@ main button{
   display: flex;
   justify-content: flex-end;
   margin: 70px 0 10px 0;
+}
+
+.button-prato-remove{
+  width: 50px;
+  height: 50px; 
+  margin-right: 0px;
+  border-radius: 50px;
+  margin-left: 30px;
+  border:solid 1px #f44336;
+  background-color: #ffffff;
+  color: #f44336;
+}
+.button-prato-remove:hover{
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.button-prato-edit{
+  width: 50px;
+  height: 50px; 
+  margin-right: 0px;
+  border-radius: 50px;
+  border:solid 1px  mediumspringgreen;
+  background-color: #ffffff;
+  color:  mediumspringgreen;
+}
+
+.button-prato-edit:hover{
+  background-color: mediumspringgreen;
+  color: #ffffff;
+}
+
+.button-add{
+  margin: 140px 0 10px 10px;
+  width: 60px;
+  height: 60px;  
+  margin-right: 0px;
+  border-radius: 50px;
+  border:solid 1px #f44336;
+  background-color: #ffffff;
+  color: #f44336;
+  font-size: 20px;
+}
+.button-add:hover{
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.button-remove{
+  width: 60px;
+  height: 60px; 
+  margin-right: 0px;
+  margin-left: 10px;
+  border-radius: 50px;
+  border:solid 1px #f44336;
+  background-color: #ffffff;
+  color: #f44336;
+  font-size: 20px;
+}
+
+.button-remove:hover{
+  background-color: #f44336;
+  color: #ffffff;
 }

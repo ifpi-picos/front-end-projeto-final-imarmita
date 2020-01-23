@@ -82,3 +82,15 @@ form{
     font-family: nexaBold;
 
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo img{
+    height: 70px;
+    width: 90px;
+    margin-right: 5px;
+}

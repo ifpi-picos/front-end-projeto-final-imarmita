@@ -42,14 +42,12 @@
 
 body{
     background-color: #F44336;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     position: relative;
 }
 
 .content{
     margin-top: 100px;
+    height: 350px;
     display: block;
 }
 
@@ -65,10 +63,13 @@ h1,h2{
     margin-bottom: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 h2{
     margin-right: 10px;
 }
-
 
 .logo{
     display:flex;
@@ -86,4 +87,25 @@ h2{
     height: 100px;
     width: 120px;
     margin-right: 5px;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 20px;
+    width: 150px;
+    border:solid 1px white;
+    background-color: #F44336;
+    color:white;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: white;
+    color:#F44336; 
 }

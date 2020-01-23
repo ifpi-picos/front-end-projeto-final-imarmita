@@ -26,8 +26,6 @@ function enviarCliente(cliente) {
 }
 
 function tratarResposta(msg, status) {
-
-
   console.log(msg)
   if (status === 201) {
     const alert = document.getElementById("alert");

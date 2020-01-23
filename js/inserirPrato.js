@@ -1,4 +1,3 @@
-
 function inserirItem(){
     console.log("entrrei")
     const inputsPrato = document.getElementById("inputsPrato");
@@ -8,3 +7,4 @@ function inserirItem(){
     newInput.setAttribute("placeholder", "Item do prato");
     inputsPrato.appendChild(newInput);
 }
+
